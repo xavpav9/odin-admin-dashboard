@@ -31,10 +31,21 @@ html * {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-auto-rows: 40px;
+    column-gap: 8px;
 
-    padding: 10%;
-    background-color: #29E;
+    padding: 60px 20px 30px;
+    background-color: #18D;
     color: white;
+
+    & > * {
+      align-self: center;
+    }
+
+    img {
+      justify-self: center;
+      width: 30px;
+      height: auto;
+    }
 
     h2 {
       font-size: 2.5rem;
