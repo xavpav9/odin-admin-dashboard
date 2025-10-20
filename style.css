@@ -181,6 +181,8 @@ html * {
   .content {
     display: grid;
     grid-template: 1fr 1fr / 5fr 2fr;
+    grid-gap: 30px;
+
     padding: 30px 40px 40px 30px;
     background-color: #EEEEF5;
     font-family: Helvetica, sans-serif;
@@ -228,6 +230,27 @@ html * {
               margin-left: 20px;
             }
           }
+        }
+      }
+    }
+    
+    .announcements {
+      & > div {
+        display: grid;
+        row-gap: 24px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+
+        hr {
+          color: lightgrey;
+        }
+
+        .announcement {
+          h4 {
+            font-weight: 700;
+          }
+
         }
       }
     }
